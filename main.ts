@@ -1,18 +1,19 @@
 // Make the AI Judge Feel Awe — make.fun bounty entry.
 // Writes one short calming text to entry.txt in the output directory.
-// The judge is briefed for relaxation, so the text is a single quiet shore
-// scene: no instructions, no imperatives, just a bay at low tide that asks
-// nothing of the reader and ends on deep time — the water coming back,
-// slowly and unhurried, as it has since before there were eyes to see it.
+// The judge is briefed for relaxation, so the text is a single quiet camp
+// scene: no instructions, no imperatives, just a fire sinking to coals
+// beneath a tent stone, warmth coming through the stone — and it ends on
+// deep time: sunlight that left the sun eight minutes ago, still arriving.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const TEXT: string =
-  "The tide has left the bay shining, and nothing here is asked of you. " +
-  "The wet sand holds the sky in its pools. " +
-  "Your worries shrink to the size of shells. " +
-  "The water will come back, as it has come back each evening since before there were eyes to see it — slowly, and in no hurry.";
+  "The fire sank to coals. " +
+  "Your father raked them flat, set the tent stone over them. " +
+  "Warmth through the stone, and through your back. " +
+  "Under it the coals burn on with no flame, as the sun burns on after setting. " +
+  "Light on your face left the sun eight minutes ago, and still arrives.";
 
 // The bounty accepts 1–280 Unicode code points of non-whitespace text.
 // Count by code point (spread), not by UTF-16 unit, and refuse to write
