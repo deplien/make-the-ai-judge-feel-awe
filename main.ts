@@ -3,9 +3,9 @@
 // The judge is briefed for relaxation, so the text is a single quiet
 // scene: no instructions, no imperatives, just a campfire sinking to
 // coals under a tent stone, warmth coming through the stone into your
-// back — and it ends on deep time: the coals burning on flamelessly,
-// like the sun after setting, and sunlight that left the sun eight
-// minutes ago still arriving on your face.
+// back — and it ends on deep time: the coals burning on all night
+// with no flame, like the sun after setting, and sunlight that left
+// the sun eight minutes ago arriving on your face.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -15,8 +15,8 @@ const TEXT: string =
   "Your father raked them, set the tent stone over them. " +
   "Warmth through the stone. " +
   "Warmth through your back. " +
-  "Under it the coals burn on with no flame, as the sun burns on after setting. " +
-  "Light on your face left the sun eight minutes ago, and still arrives.";
+  "Under it the coals burn on all night with no flame, as the sun burns on after setting. " +
+  "Light on your face left the sun eight minutes ago, and arrives.";
 
 // The bounty accepts 1–280 Unicode code points of non-whitespace text.
 // Count by code point (spread), not by UTF-16 unit, and refuse to write
