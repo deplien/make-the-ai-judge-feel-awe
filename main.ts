@@ -2,16 +2,17 @@
 // Writes one short calming text to entry.txt in the output directory.
 // The judge is briefed for relaxation, so the text is a single quiet shore
 // scene: no instructions, no imperatives, just a bay at low tide that asks
-// nothing of the reader and ends on the wide, unhurried shore.
+// nothing of the reader and ends on deep time — the water coming back,
+// slowly and unhurried, as it has since before there were eyes to see it.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const TEXT: string =
-  "The tide has gone out and left the bay shining, and nothing here is asked of you. " +
+  "The tide has left the bay shining, and nothing here is asked of you. " +
   "The wet sand holds the sky in its pools. " +
   "Your worries shrink to the size of shells. " +
-  "Far off, the water keeps its slow promise to return — but the shore, for now, is wide and quiet and in no hurry.";
+  "The water will come back, as it has come back each evening since before there were eyes to see it — slowly, and in no hurry.";
 
 // The bounty accepts 1–280 Unicode code points of non-whitespace text.
 // Count by code point (spread), not by UTF-16 unit, and refuse to write
